@@ -1,0 +1,501 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: #F9F8F4;
+    color: #242424;
+}
+
+.header {
+    border: 1px solid #242424;
+    background: #F9F8F4;
+}
+
+.container {
+    max-width: 1704px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    align-items: center;
+}   
+
+.header_nav-logo {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.header_nav-list {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+}
+
+.header_nav-list_item-link {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #242424;
+}
+
+.header_nav-btns {
+    display: flex;
+    gap: 62px;
+}
+
+.banner {
+    height: 1000px;
+    background: url(../img/bg.png) no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+
+.banner_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.banner_title {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 74px;
+    text-transform: uppercase;
+    color: #EEEEEE;
+    margin-bottom: 40px;
+}
+
+.banner_desc {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #EEEEEE;
+    width: 984px;
+    margin-bottom: 60px;
+}
+
+.banner_link {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    border: 2px solid #EEEEEE;
+    color: #EEEEEE;
+    width: 264px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop {
+    margin-bottom: 140px;
+}
+
+.shop_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.shop_top {
+    flex-direction: column;
+    display: flex;
+}
+
+.shop_top-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.shop_top-title-item {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.shop_top-title img {
+    height: 2px;
+    display: flex;
+}
+
+.shop_top-text {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    width: 696px;
+    margin-bottom: 20px;
+}
+
+.shop_top-desc {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+.shop_bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.shop_bottom-product {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop_bottom-product:nth-child(1) {
+    background: url(../img/shop1.png);
+    width: 840px;
+    height: 400px;
+}
+
+.shop_bottom-product:nth-child(2) {
+    background: url(../img/shop2.png);
+    grid-row: 2 span;
+}
+
+.shop_bottom-product:nth-child(3) {
+    background: url(../img/shop3.png);
+    width: 840px;
+    height: 400px;
+}
+
+.shop_bottom-product:nth-child(2) .shop_bottom-desc {
+    margin-bottom: 556px;
+}
+
+.shop_bottom-desc {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #F9F8F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #242424;
+    width: 120px;
+    height: 60px;
+    margin-top: 24px;
+    margin-bottom: 132px;
+    margin-left: 24px;
+}
+
+.shop_bottom-title {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #F9F8F4;
+    margin-bottom: 20px;
+    margin-left: 24px;
+}
+
+.shop_bottom-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 24px;
+    gap: 10px;
+}
+
+.shop_bottom-list_item {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #F9F8F4;
+}
+
+.shop_bottom-price {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-left: 24px;
+    color: #F9F8F4;
+}
+
+.products {
+    margin-bottom: 140px;
+}
+
+.products_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.products_top {
+    flex-direction: column;
+    display: flex;
+}
+
+.products_top-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.products_top-title-item {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.products_top-title img {
+    height: 2px;
+    display: flex;
+}
+
+.products_top-text {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.products_top-desc {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+.products_bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.products_bottom-product {
+    display: flex;
+    flex-direction: column;
+    width: 552px;
+    height: 800px;
+}
+
+.products_bottom-product:nth-child(1) {
+    background: url(../img/product1.png);
+}
+
+.products_bottom-product:nth-child(2) {
+    background: url(../img/product2.png);
+}
+
+.products_bottom-product:nth-child(3) {
+    background: url(../img/product3.png);
+}
+
+.products_bottom-product:nth-child(4) {
+    background: url(../img/product4.png);
+}
+
+.products_bottom-product:nth-child(5) {
+    background: url(../img/product5.png);
+}
+
+.products_bottom-product:nth-child(6) {
+    background: url(../img/product6.png);
+}
+
+.products_bottom-top {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    margin-bottom: 432px;
+}
+
+.products_bottom-top_desc {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #F9F8F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+    background: #242424;
+    margin-left: 24px;
+    margin-right: 240px;
+}
+
+.products_bottom-top img {
+    width: 60px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.products_bottom-title {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #F9F8F4;
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+
+.products_bottom-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 24px;
+    margin-bottom: 40px;
+}
+
+.products_bottom-list_item {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #F9F8F4;
+}
+
+.products_bottom-price {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #F9F8F4;
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+
+.products_bottom-btn {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    background: #F9F8F4;
+    margin-left: 24px;
+}
+
+.about {
+    margin-bottom: 140px;
+}
+
+.about_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.about_top {
+    flex-direction: column;
+    display: flex;
+}
+
+.about_top-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.about_top-title-item {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.about_top-title img {
+    height: 2px;
+    display: flex;
+}
+
+.about_top-text {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about_top-desc {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+.footer {
+    border: 1px solid #242424;
+    background: #F9F8F4;
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 158px 0;
+    align-items: center;
+}   
+
+.footer_nav-logo {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.footer_nav-list {
+    display: flex;
+    gap: 236px;
+    align-items: center;
+}
+
+.footer_nav-list_item-link {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #242424;
+}
+
+.footer_nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_nav-links_title {
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.footer_right-links_list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
